@@ -1,0 +1,79 @@
+<svg viewBox="0 0 400 400" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fundo circular gradiente -->
+  <defs>
+    <linearGradient id="skyGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4A90E2;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#67B5E8;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="sunGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD93D;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+    </linearGradient>
+    <linearGradient id="planeGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFFFFF;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#E8F4F8;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Círculo de fundo -->
+  <circle cx="200" cy="200" r="180" fill="url(#skyGradient)" opacity="0.9"/>
+  
+  <!-- Sol -->
+  <circle cx="140" cy="140" r="35" fill="url(#sunGradient)"/>
+  <circle cx="140" cy="140" r="28" fill="#FFE66D" opacity="0.8"/>
+  
+  <!-- Raios do sol -->
+  <g opacity="0.6">
+    <line x1="140" y1="95" x2="140" y2="105" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="140" y1="175" x2="140" y2="185" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="95" y1="140" x2="105" y2="140" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="175" y1="140" x2="185" y2="140" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="110" y1="110" x2="117" y2="117" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="163" y1="163" x2="170" y2="170" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="170" y1="110" x2="163" y2="117" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+    <line x1="117" y1="163" x2="110" y2="170" stroke="#FFD93D" stroke-width="3" stroke-linecap="round"/>
+  </g>
+  
+  <!-- Avião -->
+  <g transform="translate(220, 180) rotate(-25)">
+    <!-- Corpo do avião -->
+    <ellipse cx="0" cy="0" rx="45" ry="12" fill="url(#planeGradient)" stroke="#2C5F8D" stroke-width="2"/>
+    
+    <!-- Asas -->
+    <ellipse cx="-10" cy="0" rx="35" ry="8" fill="url(#planeGradient)" stroke="#2C5F8D" stroke-width="2" transform="rotate(90)"/>
+    
+    <!-- Cauda -->
+    <path d="M -40,-2 L -50,-8 L -45,0 L -50,8 Z" fill="url(#planeGradient)" stroke="#2C5F8D" stroke-width="2"/>
+    
+    <!-- Janelas -->
+    <circle cx="10" cy="0" r="3" fill="#4A90E2" opacity="0.6"/>
+    <circle cx="0" cy="0" r="3" fill="#4A90E2" opacity="0.6"/>
+    <circle cx="-10" cy="0" r="3" fill="#4A90E2" opacity="0.6"/>
+  </g>
+  
+  <!-- Trilha do avião -->
+  <path d="M 160 210 Q 180 200, 200 195" stroke="white" stroke-width="3" fill="none" opacity="0.7" stroke-dasharray="5,5"/>
+  
+  <!-- Nuvens -->
+  <g opacity="0.7">
+    <ellipse cx="280" cy="120" rx="25" ry="15" fill="white"/>
+    <ellipse cx="295" cy="115" rx="20" ry="12" fill="white"/>
+    <ellipse cx="310" cy="120" rx="22" ry="14" fill="white"/>
+  </g>
+  
+  <g opacity="0.6">
+    <ellipse cx="90" cy="260" rx="20" ry="12" fill="white"/>
+    <ellipse cx="105" cy="257" rx="18" ry="10" fill="white"/>
+    <ellipse cx="118" cy="260" rx="20" ry="12" fill="white"/>
+  </g>
+  
+  <!-- Globo/Terra estilizado -->
+  <circle cx="200" cy="280" r="45" fill="#2ECC71" opacity="0.3" stroke="#27AE60" stroke-width="2"/>
+  <path d="M 200 235 Q 220 260, 200 305" stroke="#27AE60" stroke-width="2" fill="none" opacity="0.5"/>
+  <path d="M 200 235 Q 180 260, 200 305" stroke="#27AE60" stroke-width="2" fill="none" opacity="0.5"/>
+  <ellipse cx="200" cy="270" rx="45" ry="12" fill="none" stroke="#27AE60" stroke-width="2" opacity="0.5"/>
+  
+  <!-- Texto -->
+  <text x="200" y="330" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2C5F8D" text-anchor="middle">DESTINITY</text>
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="14" fill="#4A90E2" text-anchor="middle" letter-spacing="3">EXPLORE O MUNDO</text>
+</svg>

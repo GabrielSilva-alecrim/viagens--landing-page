@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+    />
+    <title>O seu destino de viajem é com nós| Destinity</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="icones">
+        <ul class="list-icones">
+          <li><a href="/index.html" ><i class="bi-whatsapp"> (xx) 88xx-xxxx</i></a></li>
+          <li><a href="/index.html"><i class="bi bi-facebook"> facebook</i></a></li>
+         <li><a href="/index.html"><i class="bi-envelope-fill"> Email</i></a></li>
+        </ul>
+       
+      </div>
+      <div class="img_logo">
+       <a href="/index.html"> <img src="/img/travel_logo.svg" alt="Logo da empresa de viagem" /></a>
+      </div>
+      <nav class="nav-header">
+        <ul class="menu-header">
+          <li><a href="/pages/tripMe.html">TripMe</a></li>
+          <li><a href="/pages/meetUs.html"> MeetUs</a></li>
+          <li><a href="/pages/minhasViagem.html">Minhas Viajem</a></li>
+          <li><a href="/pages/nosEncontre.html">Nos encontre</a></li>
+          <li><a href="/pages/conselhos.html">Conselhos</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main class="main">
+      <div class="main-content">
+        <section class="section">
+          <h1 id="title">Viajem com segurança e conforto, deixe com nós a parte chata!</h1>
+          <div class="search-box">
+            <input type="text" placeholder="Qual o seu destino">
+            <button>Buscar</button>
+          </div>
+        </section>
+        <h2>Destinos mais pesquisados</h2>
+        <p>Explore o mundo sem medo</p>
+      </div>
+      <div class="scroll-container">
+        <button class="scroll-button prev" onclick="scrollCards('prev')" id="previo-button">&#8249</button>
+        <div class="cards" id="cards">
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #92806a 0%, #da780f 100%);">
+              <strong> Paris</strong>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para paris</h2>
+              <p class="card-description">Conheça a Torre Eiffel</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #938c05 0%, #00f2fe 100%);">
+             <strong>Maldivas</strong> 
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Maldivas</h2>
+              <p class="card-description">Lugar otímo para relaxar em praias paradisíacas</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #40cd40 0%, #14b409 100%);">
+             <strong>Tóquio</strong>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Tóquio</h2>
+              <p class="card-description">Lugar otímo para aprecia a cultura japonesa</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #14a58d 0%, #00f2fe 100%);">
+           <strong>Grécia</strong> 
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Grécia</h2>
+              <p class="card-description">Lugar otímo para ver histórias antigas</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #26498b 0%, #100da4 100%);">
+             <strong>Dubai</strong>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Dubai</h2>
+              <p class="card-description">Lugar otímo para conhecer no deserto</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+           <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #4f3a8d 0%, #460c85 100%);">
+             <strong>Peru</strong> 
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Peru</h2>
+              <p class="card-description">Lugar otímo </p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #603a8b 0%, #850fa2 100%);">
+             <strong> Nova York</strong>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Nova York</h2>
+              <p class="card-description">Lugar otímo para quem gosta da vida urbana</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+           <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #4facfe 0%, #00f2fe 100%);">
+             <strong>Bali</strong> 
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Bali</h2>
+              <p class="card-description">Lugar otímo para espiritualidade</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+          <div class="card">
+            <div class="card-img" style="background: linear-gradient(135deg, #ac348a 0%, #ba118a 100%);">
+              <strong>Londres</strong>
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Londres</h2>
+              <p class="card-description">Lugar otímo para conhecer a história britânica</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>
+           <div class="card">
+            <div class="card-img"style="background: linear-gradient(135deg, #94253f 0%, #cb0f41 100%);">
+              <strong>Barcelona</strong> 
+            </div>
+            <div class="card-content">
+              <h2 class="card-title">Vaijem para Barcelona</h2>
+              <p class="card-description">Lugar otímo para ver arquitetura de Gaudí</p>
+            </div>
+            <div class="card-price">
+              <span class="price">R$ x.xxx </span>
+            </div>
+            <button class="button">Comprar Agora</button>
+          </div>     
+        </div>
+        <button class="scroll-button next" onclick="scrollCards('next')" id="next-button">&#8250</button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div>
+        <p>&copy; 2026 Destinity - Todos os direitos reservados</p>
+        <p>Endereço: Rua xxxx, xxx - xxxxx, xxx</p>
+      </div>
+    </footer>
+    <script>
+     const wrapper = document.getElementById('cards');
+        const prevBtn = document.getElementById('previo-button');
+        const nextBtn = document.getElementById('next-button');
+
+        function scrollCards(direction) {
+            const cardWidth = wrapper.querySelector('.card').offsetWidth;
+            const gap = 25;
+            const scrollAmount = cardWidth + gap;
+
+            if (direction === 'prev') {
+                wrapper.scrollBy({
+                    left: -scrollAmount,
+                    behavior: 'smooth'
+                });
+            } else {
+                wrapper.scrollBy({
+                    left: scrollAmount,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Atualiza estado dos botões baseado na posição do scroll
+        function updateButtons() {
+            const scrollLeft = wrapper.scrollLeft;
+            const maxScroll = wrapper.scrollWidth - wrapper.clientWidth;
+
+            prevBtn.disabled = scrollLeft <= 0;
+            nextBtn.disabled = scrollLeft >= maxScroll - 5; // -5 para margem de erro
+        }
+
+        // Atualiza botões ao rolar
+        wrapper.addEventListener('scroll', updateButtons);
+
+        // Atualiza botões ao carregar
+        updateButtons();
+
+        // Suporte para arrastar com mouse
+        let isDown = false;
+        let startX;
+        let scrollLeftStart;
+
+        wrapper.addEventListener('mousedown', (e) => {
+            isDown = true;
+            wrapper.style.cursor = 'grabbing';
+            startX = e.pageX - wrapper.offsetLeft;
+            scrollLeftStart = wrapper.scrollLeft;
+        });
+
+        wrapper.addEventListener('mouseleave', () => {
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+        });
+
+        wrapper.addEventListener('mouseup', () => {
+            isDown = false;
+            wrapper.style.cursor = 'grab';
+        });
+
+        wrapper.addEventListener('mousemove', (e) => {
+            if (!isDown) return;
+            e.preventDefault();
+            const x = e.pageX - wrapper.offsetLeft;
+            const walk = (x - startX) * 2;
+            wrapper.scrollLeft = scrollLeftStart - walk;
+        });
+    </script>
+  </body>
+</html>

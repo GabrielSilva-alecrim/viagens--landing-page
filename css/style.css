@@ -1,0 +1,383 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  height: auto;
+  overflow-y: auto;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  display: flex;
+  border-bottom: 1px solid black;
+  position: relative;
+  background-color: aquamarine;
+}
+
+/* estilo da imagem da logo*/
+.img_logo {
+  box-sizing: border-box;
+  width: 150px;
+  margin-left: 90px;
+  padding: 0;
+  bottom: 0px;
+}
+
+.img_logo a {
+  text-decoration: none;
+}
+
+/*estilo do icones*/
+.icones {
+  font-size: 32px;
+  position: absolute;
+  top: 30px;
+  right: 200px;
+}
+
+.list-icones {
+  display: flex;
+  gap: 30px;
+  list-style: none;
+}
+
+.list-icones a {
+  color: black;
+  text-decoration: none;
+}
+
+.list-icones a:hover {
+  transition: color 0.3s ease;
+  color: blue;
+}
+
+/*estilo dos link do menu */
+.nav-header {
+  position: absolute;
+  bottom: 30px;
+  right: 180px;
+  font-size: 30px;
+}
+
+.menu-header {
+  display: flex;
+  list-style: none;
+  gap: 40px;
+}
+
+.menu-header a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.menu-header a:hover {
+  transition: color 0.3s ease;
+  color: blue;
+}
+/*estilo da barra de pesquisa*/
+.section {
+  background-color: aliceblue;
+  width: 100%;
+  min-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+.search-box {
+  background-color: white;
+  padding: 10px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+}
+
+.search-box input {
+  flex: 1;
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  outline: none;
+}
+.search-box button {
+  background: linear-gradient(135deg, #4facfe, #00f2fe 100%);
+  color: white;
+  border: none;
+  padding: 15px 35px;
+  border-radius: 50px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+/*estilo da tag main*/
+.main {
+  flex: 1;
+  min-height: 100vh;
+  overflow: visible;
+  min-height: 110vh;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  background-image:
+    linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(/img/cathedral-6830526_1920.jpg);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  gap: 20px;
+}
+
+.main-content {
+  font-size: 20px;
+  display: grid;
+  place-items: center;
+  color: white;
+  margin-bottom: 30px;
+  box-sizing: border-box;
+  gap: 30px;
+}
+
+#title {
+  font-size: 30px;
+  margin: 20px 30px;
+  font-weight: bold;
+  color: #333;
+}
+
+/*footer*/
+.footer {
+  position: relative;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2c3e50;
+  color: white;
+  gap: 20px;
+  padding: 20px;
+  font-size: 18px;
+}
+
+/*estilo dos cards*/
+.scroll-container {
+  max-width: 1650px;
+  margin: 80px auto 0;
+  position: relative;
+  padding: 0 70px;
+}
+
+.cards {
+  display: flex;
+  gap: 25px;
+  margin-top: 80px;
+  overflow-x: auto;
+  padding-bottom: 20px;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  justify-content: flex-start;
+  z-index: 1;
+}
+
+.cards::-webkit-scrollbar {
+  height: 10px;
+}
+
+.cards::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb {
+  background: #667eea;
+  border-radius: 10px;
+}
+
+.cards::-webkit-scrollbar-thumb:hover {
+  background: #764ba2;
+}
+
+.card {
+  background-color: white;
+  border-radius: 16px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  min-width: 250px;
+  max-width: 280px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-repeat: no-repeat;
+  background-color: #764ba2;
+}
+
+.card-content {
+  padding: 25px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+}
+
+.card-discription {
+  color: #7f8c8d;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 15px;
+  flex: 1;
+}
+
+.card-price {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+.price {
+  color: #0c15c0;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.button {
+  border: none;
+  width: 100%;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.button:hover {
+  transform: scale(1.02);
+  box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+}
+
+.button:active {
+  transform: scale(0.8);
+  border-radius: 12px;
+}
+
+/*button de navegação horizontal dos cards */
+
+.scroll-button {
+  position: absolute;
+  transform: translateY(-50%);
+  background: white;
+  border: none;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  z-index: 10;
+  transition: all 0.3s ease;
+}
+
+.scroll-button:hover {
+  background-color: #667eea;
+  color: white;
+  transform: translateY(-50%) scale(1.1);
+}
+
+.scroll-button:active {
+  transform: translateY(-50%) scale(0.95);
+}
+
+.scroll-button.prev {
+  left: 10px;
+}
+
+.scroll-button.next {
+  right: 10px;
+}
+
+.scroll-button:disabled {
+  opacity: 0.3;
+  cursor: not-allowed;
+}
+
+.scroll-button:disabled:hover {
+  background-color: white;
+  color: #667eea;
+  transform: translateY(-50%);
+}
+
+@media (max-width: 768px) {
+  .carousel-container {
+    padding: 0 50px;
+  }
+
+  .nav-button {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+
+  .card {
+    min-width: 280px;
+    max-width: 320px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    padding: 0;
+  }
+
+  .nav-button {
+    display: none; /* esconde botões em telas muito pequenas */
+  }
+}

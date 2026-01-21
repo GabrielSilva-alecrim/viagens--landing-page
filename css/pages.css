@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: aquamarine;
+}
+/* estilo do link para retorna a pagina principal*/
+.bnt-home {
+  position: absolute;
+  font-size: 28px;
+  font-style: italic;
+  font-weight: bold;
+  top: 30px;
+  left: 15px;
+  padding: 10px;
+  background-color: aqua;
+  border-radius: 15px;
+}
+
+.bnt-home a {
+  text-decoration: none;
+  color: black;
+}
+
+.bnt-home a:hover {
+  transition: color 0.3s ease;
+  color: blue;
+}
+
+/*estilo do texto dentro do main*/
+.main-content {
+  position: absolute;
+  top: 150px;
+  right: 10%;
+  left: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  font-size: 25px;
+}
+
+.main-content h1 {
+  font-weight: bolder;
+  font-size: 32px;
+}
